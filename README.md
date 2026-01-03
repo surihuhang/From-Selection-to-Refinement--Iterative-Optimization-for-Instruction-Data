@@ -20,12 +20,12 @@
 
 ## Overview
 
-We propose **AIDO** — an **A**utomated **I**nstruction **D**ata **O**ptimization framework that systematically enhances instruction tuning datasets through **two key stages**:  **data selection** and **data revision**.
+We propose a novel automated iterative framework for instruction data optimization that systematically enhances instruction tuning datasets through **two key stages**:  **data selection** and **data refinement**.
 
 1. **Stage 1 — Data Selection:**  
    AIDO separates high- and low-quality samples using a **coarse-grained LLM scoring and classifing** module and a **fine-grained metric ranking and clustering** module, ensuring precise filtering of suboptimal data.
 
-2. **Stage 2 — Data Revision:**  
+2. **Stage 2 — Data Refinement:**  
    Low-quality samples are **iteratively revised** via evaluation and semantic consistency checks — correcting factual errors, completing omissions, removing redundancies, and improving alignment between instructions and responses.
 
 ![AIDO Framework](Figures/framework.png)
