@@ -1,5 +1,5 @@
 <p align="center">
-<h1 align="center">Optimizing Instruction Tuning Data via Selection and Revision</h1>
+<h1 align="center">From Selection to Refinement: Iterative Optimization for Instruction Data</h1>
 
 <p align="center">
     <a href=""><img src="https://img.shields.io/badge/📄-Paper-red"></a>
