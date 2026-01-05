@@ -41,7 +41,7 @@ Our framework consists of three core components designed to maximize data utilit
   - Uses **32.69% / 50.00% fewer samples** (vs. raw & best baseline) on *Alpaca*.  
   - Uses **20.00% / 79.66% fewer samples** (vs. raw & best baseline) on *Dolly*.  
 
-| Dataset    | Accuracy (%) (Ours) | Δ vs Raw data | Δ vs SoTA (Selection) | Δ vs SoTA (Revision) | Data Reduction (vs Raw / SoAT)(%) |
+| Dataset    | Accuracy (%) (Ours) | Δ vs Raw data | Δ vs SoTA (Selection) | Δ vs SoTA (Revision) | Data Reduction (Δ vs Raw / SoAT)(%) |
 | :--------- | :-----------------: |:-------------:| :-------------------: | :------------------: | :-------------------------------: |
 | **Alpaca** |         61.02       |     +6.69     |         +2.50         |         +2.09        |            32.69 / 50.00          |
 | **Dolly**  |         60.39       |     +4.72     |         +3.65         |         +2.60        |            20.00 / 79.66          |
