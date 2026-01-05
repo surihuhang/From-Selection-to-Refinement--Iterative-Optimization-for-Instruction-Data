@@ -24,11 +24,11 @@ We propose a novel automated iterative framework for instruction data optimizati
 
 Our framework consists of three core components designed to maximize data utility and minimize noise:
 
-1. **🔍 Instruction Quality Differentiation (IQD)**: Instead of simple filtering, we employ a multi-dimensional analysis to distinguish valuable data based on three criteria. High-quality data is retained directly, while potentially valuable but low-quality data is sent to the refinement pipeline.
+1. **Instruction Quality Differentiation (IQD)**: Instead of simple filtering, we employ a multi-dimensional analysis to distinguish valuable data based on three criteria. High-quality data is retained directly, while potentially valuable but low-quality data is sent to the refinement pipeline.
 
-2. **🔄 Feedback-driven Iterative Refinement (FIR)**: For the identified low-quality data, we implement an "Evaluate-Refine-Review" loop.
+2. **Feedback-driven Iterative Refinement (FIR)**: For the identified low-quality data, we implement an "Evaluate-Refine-Review" loop.
 
-3. **🎯 Output Alignment (OA)**: To ensure the final dataset is precise, this module guarantees semantic consistency between instruction-input pairs and their outputs by anchoring keywords, effectively eliminating hallucinations or semantic drift.
+3. **Output Alignment (OA)**: To ensure the final dataset is precise, this module guarantees semantic consistency between instruction-input pairs and their outputs by anchoring keywords, effectively eliminating hallucinations or semantic drift.
 
 ![AIDO Framework](Figures/framework.png)
 
