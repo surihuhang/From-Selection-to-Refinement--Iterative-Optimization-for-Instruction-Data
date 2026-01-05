@@ -25,24 +25,10 @@ We propose a novel automated iterative framework for instruction data optimizati
 Our framework consists of three core components designed to maximize data utility and minimize noise:
 
 1. **🔍 Instruction Quality Differentiation (IQD)**
-Instead of simple filtering, we employ a multi-dimensional analysis to distinguish valuable data based on three criteria:
-
-LLM-based Quality Grading
-
-Semantic Diversity
-
-Instruction Difficulty
-
-High-quality data is retained directly, while potentially valuable but low-quality data is sent to the refinement pipeline.
+Instead of simple filtering, we employ a multi-dimensional analysis to distinguish valuable data based on three criteria: 1) LLM-based Quality Grading. 2) Semantic Diversity. 3) Instruction Difficulty. High-quality data is retained directly, while potentially valuable but low-quality data is sent to the refinement pipeline.
 
 2. **🔄 Feedback-driven Iterative Refinement (FIR)**
-For the identified low-quality data, we implement an "Evaluate-Refine-Review" loop:
-
-Compare: The system detects errors by comparing model predictions with original outputs.
-
-Refine: A rewriting expert improves the data based on generated feedback.
-
-Review: A review expert verifies the refinement. This cycle iterates until optimization stabilizes.
+For the identified low-quality data, we implement an "Evaluate-Refine-Review" loop.
 
 3. **🎯 Output Alignment (OA)**
 To ensure the final dataset is precise, this module guarantees semantic consistency between instruction-input pairs and their outputs by anchoring keywords, effectively eliminating hallucinations or semantic drift.
