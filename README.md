@@ -22,11 +22,30 @@
 
 We propose a novel automated iterative framework for instruction data optimization that systematically enhances instruction tuning datasets through **two key stages**:  **data selection** and **data refinement**.
 
-1. **Stage 1 — Data Selection:**  
-   AIDO separates high- and low-quality samples using a **coarse-grained LLM scoring and classifing** module and a **fine-grained metric ranking and clustering** module, ensuring precise filtering of suboptimal data.
+Our framework consists of three core components designed to maximize data utility and minimize noise:
 
-2. **Stage 2 — Data Refinement:**  
-   Low-quality samples are **iteratively revised** via evaluation and semantic consistency checks — correcting factual errors, completing omissions, removing redundancies, and improving alignment between instructions and responses.
+1. **🔍 Instruction Quality Differentiation (IQD)**
+Instead of simple filtering, we employ a multi-dimensional analysis to distinguish valuable data based on three criteria:
+
+LLM-based Quality Grading
+
+Semantic Diversity
+
+Instruction Difficulty
+
+High-quality data is retained directly, while potentially valuable but low-quality data is sent to the refinement pipeline.
+
+2. **🔄 Feedback-driven Iterative Refinement (FIR)**
+For the identified low-quality data, we implement an "Evaluate-Refine-Review" loop:
+
+Compare: The system detects errors by comparing model predictions with original outputs.
+
+Refine: A rewriting expert improves the data based on generated feedback.
+
+Review: A review expert verifies the refinement. This cycle iterates until optimization stabilizes.
+
+3. **🎯 Output Alignment (OA)**
+To ensure the final dataset is precise, this module guarantees semantic consistency between instruction-input pairs and their outputs by anchoring keywords, effectively eliminating hallucinations or semantic drift.
 
 ![AIDO Framework](Figures/framework.png)
 
