@@ -54,29 +54,29 @@ Ours not only enhances **data quality** but also significantly improves **reason
 
 We conducted a rigorous human evaluation with **three trained annotators**, employing **majority voting** to determine outcomes.  
 All sample sources and versions were **anonymized** to prevent bias.  
-Demonstrates AIDO’s **comprehensive correction** across all components evaluation — instructions, inputs, and outputs.
+Demonstrates our framework **comprehensive correction** across all components evaluation — instructions, inputs, and outputs.
 
 - **Lose probabilities:** 7.00% (*Alpaca*), 4.00% (*Dolly*)  
 - **Instruction/Input failure rates:** reduced to 2.50% and 3.00%, respectively  
 - **Output failure rates:** reduced to 6.50% and 7.00%, respectively  
 
 <p align="center">
-  <img src="Figures/huamn-eval.png" alt="AIDO Human Evaluation" width="60%">
+  <img src="Figures/huamn-eval.png" alt="Human Evaluation" width="60%">
 </p>
 
 ---
 
 ## Install
-Before running AIDO, please make sure you have **Python ≥ 3.9** and **conda** (or **pip**) installed.
+Before running our framework, please make sure you have **Python ≥ 3.9** and **conda** (or **pip**) installed.
 
-You can create a clean environment for AIDO (recommended via conda):
+You can create a clean environment for our framework (recommended via conda):
 
 ```bash
-conda create -n aido python=3.10
-conda activate aido
+conda create -n IOID python=3.10
+conda activate IOID
 ```
 
-AIDO mainly depends on the following:
+Our framework mainly depends on the following:
 
 ```bash
 openai<=0.28.0 
