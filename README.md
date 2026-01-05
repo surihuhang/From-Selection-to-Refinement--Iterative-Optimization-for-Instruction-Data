@@ -3,7 +3,7 @@
 
 <p align="center">
     <a href=""><img src="https://img.shields.io/badge/📄-Paper-red"></a>
-    <a href="https://github.com/surihuhang/AIDO/blob/main/LICENSE"><img src="https://img.shields.io/github/license/surihuhang/AIDO"></a>
+    <a href="https://github.com/surihuhang/From-Selection-to-Refinement--Iterative-Optimization-for-Instruction-Data/blob/main/LICENSE"><img src="https://img.shields.io/github/license/surihuhang/From-Selection-to-Refinement--Iterative-Optimization-for-Instruction-Data"></a>
     <a href=""><img src="https://img.shields.io/badge/🤗 HuggingFace-Data & Models-green"></a>
 </p>
 
@@ -30,7 +30,7 @@ Our framework consists of three core components designed to maximize data utilit
 
 3. **Output Alignment (OA)**: To ensure the final dataset is precise, this module guarantees semantic consistency between instruction-input pairs and their outputs by anchoring keywords, effectively eliminating hallucinations or semantic drift.
 
-![AIDO Framework](Figures/framework.png)
+![Our Framework](Figures/framework.png)
 
 ## Key Highlights
 
@@ -41,12 +41,12 @@ Our framework consists of three core components designed to maximize data utilit
   - Uses **32.69% / 50.00% fewer samples** (vs. raw & best baseline) on *Alpaca*.  
   - Uses **20.00% / 79.66% fewer samples** (vs. raw & best baseline) on *Dolly*.  
 
-| Dataset    | Accuracy (%) | Δ vs Raw data | Δ vs SoTA (Selection) | Δ vs SoTA (Revision) | Data Reduction (vs Raw / SoAT)(%) |
-| :--------- | :----------: |:-------------:| :-------------------: | :------------------: | :-------------------------------: |
-| **Alpaca** |     61.02    |     +6.69     |         +2.50         |         +2.09        |            32.69 / 50.00          |
-| **Dolly**  |     60.39    |     +4.72     |         +3.65         |         +2.60        |            20.00 / 79.66          |
+| Dataset    | Accuracy (%) (Ours) | Δ vs Raw data | Δ vs SoTA (Selection) | Δ vs SoTA (Revision) | Data Reduction (vs Raw / SoAT)(%) |
+| :--------- | :-----------------: |:-------------:| :-------------------: | :------------------: | :-------------------------------: |
+| **Alpaca** |         61.02       |     +6.69     |         +2.50         |         +2.09        |            32.69 / 50.00          |
+| **Dolly**  |         60.39       |     +4.72     |         +3.65         |         +2.60        |            20.00 / 79.66          |
 
-AIDO not only enhances **data quality** but also significantly improves **reasoning, factuality**, and **generalization** across diverse task types.
+Ours not only enhances **data quality** but also significantly improves **reasoning, factuality**, and **generalization** across diverse task types.
 
 ---
 
